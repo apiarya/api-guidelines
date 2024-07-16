@@ -32,11 +32,15 @@ where the `Foo.Read.All` gives access to list all `foo`s in `buzzes` and `Bar.Re
 GET /fizzes/{fizzId}/buzzes
 ```
 
+//// TODO groupmembers.read.all makes it seem like relationships also need permissions
+//// TODO if a scope can be assigned to something, that thing and collections it's a part of and members that it has need to be inherently treated differently than other "data-only" collections
 //// TODO options are:
 //// 1. only return foos
 //// 2. return everything, but have the bars with only odata.id - gorup members are a security "needed information to make a decision"
 //// 3. 403 entirely - this is the ideal case
-        a. the API should know *all* of what can be present, and requires scopes for each of those types - this is the *actual* ideal case
+        a. the API should know *all* of what can be present, and requires scopes for each of those types
+           i. pros - this is the *actual* ideal case; there are no information leaks about count, id, types in the collection; the documentation can be more explicit about what permission scopes are required, and the workload can have full control over the required scopes
+           ii. cons - 
         b. the other cases should follow 1 or 2 and should document exactly how they deviate from 3
 
 ## Solution
