@@ -33,9 +33,11 @@ GET /fizzes/{fizzId}/buzzes
 ```
 
 //// TODO options are:
-//// 1. only return foos - alden says this is hte ideal case
+//// 1. only return foos
 //// 2. return everything, but have the bars with only odata.id - gorup members are a security "needed information to make a decision"
-//// 3. 403 entirely, but make sure to document if this happens when there are only foos present in the collection
+//// 3. 403 entirely - this is the ideal case
+        a. the API should know *all* of what can be present, and requires scopes for each of those types - this is the *actual* ideal case
+        b. the other cases should follow 1 or 2 and should document exactly how they deviate from 3
 
 ## Solution
 
