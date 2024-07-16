@@ -35,7 +35,7 @@ GET /fizzes/{fizzId}/buzzes
 //// TODO options are:
 //// 1. only return foos
 //// 2. return everything, but have the bars with only odata.id
-//// 3. 403 entirely
+//// 3. 403 entirely, but make sure to document if this happens when there are only foos present in the collection
 
 ## Solution
 
