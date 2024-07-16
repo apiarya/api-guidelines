@@ -7,9 +7,15 @@ Microsoft Graph API Design Pattern
 
 ## Problem
 
-*Describe the business context relevant for the pattern.*
+For the following model:
 
-*Provide a short description of the problem.*
+```xml
+```
+
+where the `Foo.Read.All` gives access to list all `foo`s in `fizzes` and `Bar.Read.All` gives access to list all `bar`s in `fizzes`, there is ambiguity about what behavior a client should expected when making the following request with **only** `Foo.Read.All`:
+
+```http
+```
 
 ## Solution
 
