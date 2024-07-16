@@ -33,7 +33,8 @@ GET /fizzes/{fizzId}/buzzes
 ```
 
 //// TODO groupmembers.read.all makes it seem like relationships also need permissions
-//// TODO if a scope can be assigned to something, that thing and collections it's a part of and members that it has need to be inherently treated differently than other "data-only" collections
+//// TODO if a scope can be assigned to something, that thing and collections it's a part of and members that it has need to be inherently treated differently than other "data-only" collections; the above point might be mitigated for these "Security" entities
+//// owners are also in this category it seems
 //// TODO options are:
 //// 1. only return foos
 //// 2. return everything, but have the bars with only odata.id - gorup members are a security "needed information to make a decision"
