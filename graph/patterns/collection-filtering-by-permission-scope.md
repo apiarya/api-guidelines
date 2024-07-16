@@ -32,6 +32,11 @@ where the `Foo.Read.All` gives access to list all `foo`s in `buzzes` and `Bar.Re
 GET /fizzes/{fizzId}/buzzes
 ```
 
+//// TODO options are:
+//// 1. only return foos
+//// 2. return everything, but have the bars with only odata.id
+//// 3. 403 entirely
+
 ## Solution
 
 *Describe how to implement the solution to solve the problem.*
