@@ -26,7 +26,7 @@ For the following model:
 //// TODO flesh out this model fully
 ```
 
-where the `Foo.Read.All` gives access to list all `foo`s in `buzzes` and `Bar.Read.All` gives access to list all `bar`s in `buzzes`, there is ambiguity about what behavior a client should expected when making the following request with **only** `Foo.Read.All`:
+where the `Foo.Read.All` gives access to list all `foo`s in `buzzes` and `Bar.Read.All` gives access to list all `bar`s in `buzzes`, there is ambiguity about what behavior a client should expected when making the following request with `Foo.Read.All` and `Fizz.Read.All`:
 
 ```http
 GET /fizzes/{fizzId}/buzzes
