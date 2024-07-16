@@ -33,8 +33,8 @@ GET /fizzes/{fizzId}/buzzes
 ```
 
 //// TODO options are:
-//// 1. only return foos
-//// 2. return everything, but have the bars with only odata.id
+//// 1. only return foos - alden says this is hte ideal case
+//// 2. return everything, but have the bars with only odata.id - gorup members are a security "needed information to make a decision"
 //// 3. 403 entirely, but make sure to document if this happens when there are only foos present in the collection
 
 ## Solution
